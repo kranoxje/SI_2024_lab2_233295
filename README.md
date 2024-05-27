@@ -19,6 +19,11 @@
 
 35 – 27 = 8 + 2 = 10
 
+
+![excel](https://github.com/kranoxje/-SI_2024_lab2_233295/assets/165957913/f455bf1b-663d-469b-bb1b-0955848143d4)
+
+
+
 Прв тест случај: allItems = null, payment = 6000
 
 Во овој случај, бидејќи allItems е null ќе влезе во if (allItems == null) и веднаш ќе фрли RuntimeExecption и ќе заврши програмата.
