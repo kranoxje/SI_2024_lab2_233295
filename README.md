@@ -18,3 +18,55 @@
 број на јазли = 27
 
 35 – 27 = 8 + 2 = 10
+
+Прв тест случај: allItems = null, payment = 6000
+
+Во овој случај, бидејќи allItems е null ќе влезе во if (allItems == null) и веднаш ќе фрли RuntimeExecption и ќе заврши програмата.
+
+Втор тест случај: allItems = [bread, milk, null], payment = 6000
+
+Barcode: Price: Discount
+
+bread: 563218 bread: 100 bread: 0
+
+milk: 084579 milk: 520 milk: 10
+
+null: 42a5c6 null: 400 null: 0
+
+Во овој тест, го опфаќам случајот каде allItems содржи производ кој нема име (null) и исто така allItems содржи производ кој започнува на „0” и производ кој во баркодот има карактер. Поради тоа, програмата ќе заврши со Invalid character in item barcode!
+
+Трет тест случај: allItems = [bread, milk, water], payment = 6000
+
+Barcode: Price: Discount
+
+bread: 563218 bread: 300 bread: 0
+
+milk: 084579 milk: 620 milk: 10
+
+water: water: 290 water: 15
+
+Во овој тест, го опфаќам случајот каде allItems содржи производ кој нема баркод, така што ќе фрли исклучок со порака „No barcode”. Поради исклучокот, програмата ќе заврши и нема можност за печатење на сумата.
+
+Четврт тест случај: allItems = [bread, milk, cheese], payment = 6000
+
+Barcode: Price: Discount
+
+bread: 563218 bread: 300 bread: 0
+
+milk: 084579 milk: 620 milk: 10
+
+cheese: 28637 cheese: 480 cheese: 15
+
+Во овој тест, сите производи од листата allItems се валидни и на крај добиваме sum > payment со што програмата враќа false.
+
+Петти тест случај: allItems = [bread, milk, cheese], payment = 6000
+
+Barcode: Price: Discount
+
+bread: 563218 bread: 300 bread: 5
+
+milk: 084579 milk: 320 milk: 10
+
+cheese: 28637 cheese: 200 cheese: 3
+
+Во овој тест, сите производи од листата allItems се валидни и на крај добиваме sum < payment со што програмата враќа true.
